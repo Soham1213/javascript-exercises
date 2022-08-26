@@ -1,9 +1,10 @@
 const leapYears = function(year) {
-    let temp = 0;
-    if (year % 100 != 0 && year % 400 == 0) {
+    if (year % 100 == 0 && year % 400 == 0) {
             return true;
-    } else if (year % 4 == 0) {
+    } else if (year % 100 !=0 && year % 4 == 0) {
         return true;
+    } else if (year % 100 == 0){
+        return false;
     } else {
         return false;
     }
