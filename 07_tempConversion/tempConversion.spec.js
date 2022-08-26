@@ -19,7 +19,7 @@ describe('ctof', () => {
   test('rounds to 1 decimal', () => {
     expect(ctof(73.2)).toEqual(163.8);
   });
-  test.skip('works with negatives', () => {
+  test('works with negatives', () => {
     expect(ctof(-10)).toEqual(14);
   });
 });
