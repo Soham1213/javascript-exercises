@@ -5,13 +5,12 @@ const sumAll = function(start, end) {
             for (let i = start; i >= end; i--) {
                 sum+=i;
             }
-            return sum;
         } else {
             for (let i = start; i <= end; i++) {
                 sum+=i;
             }
-            return sum;
         }
+        return sum;
     } else {
         return 'ERROR';
     }
